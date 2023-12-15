@@ -1,0 +1,58 @@
+﻿html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+
+body {
+    margin-bottom: 60px;
+}
+
+
+#customersTable {
+    width: 100%;
+    margin-top: 20px;
+}
+
+    #customersTable td, #customersTable th {
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Ajustes para columnas */
+    #customersTable .column-id {
+        width: 10%;
+    }
+
+    #customersTable .column-name {
+        width: 30%;
+    }
+
+    #customersTable .column-country {
+        width: 20%;
+    }
+
+    #customersTable .column-phone {
+        width: 40%;
+    }
+
+/* Estilos para responsividad */
+@media screen and (max-width: 1024px) {
+    #customersTable .column-id,
+    #customersTable .column-name,
+    #customersTable .column-country,
+    #customersTable .column-phone {
+        width: auto; /* O un porcentaje más pequeńo */
+    }
+}

@@ -1,0 +1,19 @@
+﻿﻿@{
+    ViewData["Title"] = "List of Suppliers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de Proveedores</h2>
+<br />
+<div class="col-6">
+    <a asp-action="Create" class="btn btn-primary text-white">Crear nuevo Proveedor</a>
+</div>
+<br />
+<div id="suppliersContainer">
+    <!-- Los proveedores se mostrarán aquí -->
+</div>
+
+
+@section Scripts {
+    <script src="~/js/supplier.js"></script>
+}
